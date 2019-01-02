@@ -45,23 +45,27 @@ cleanVariableNames <- function(feat){
 makeAppropriateNames <- function(varnames){
   print("Renaming variable names...", quote = FALSE)
   print("", quote = FALSE)
+  temp <- varnames[2:(length(varnames)-1)]
   
-  #for each variable name
-  for(i in 1:length(varnames)){
-    #except for subject.id and activity
-    if(varnames[i] != 'subject.id' & varnames[i] != 'activity'){
-      #the excess periods that the cleanVariableNames function created were removed
-      varnames[i] <- sub("\\.\\.","",varnames[i])
-      #and the t and f at the beginning of each variable name is replaced with time and frequency, respectively
-      if(substr(varnames[i],1,1)=='t'){
-        varnames[i] <- substr(varnames[i],2,nchar(varnames[i]))
-        varnames[i] <- paste0("time.",varnames[i])
-      }else{
-        varnames[i] <- substr(varnames[i],2,nchar(varnames[i]))
-        varnames[i] <- paste0("frequency.",varnames[i])
-      }
-    }
-  }
+  temp <- sub("^t","time",temp)
+  temp <- sub("^f","frequency",temp)
+  temp <- sub("BodyBody","Body.",temp)
+  temp <- sub("Acc","Acceleration.",temp)
+  temp <- sub("Mag","Magnitude.",temp)
+  temp <- sub("Jerk","Jerk.",temp)
+  temp <- sub("Gyro","Gyroscope.",temp)
+  temp <- sub("Gravity","Gravity.",temp)
+
+  temp1 <- grepl("\\.mean",temp)
+  temp[temp1] <- paste0("Mean.of.",temp[temp1])
+  temp[temp1] <- sub("\\.mean","",temp[temp1])
+  temp1 <- grepl("\\.std",temp)
+  temp[temp1] <- paste0("Standard.Deviation.of.",temp[temp1])
+  temp[temp1] <- sub("\\.std","",temp[temp1])
+  temp <- sub("\\.\\.\\.","",temp)
+  temp <- tolower(temp)
+  
+  varnames[2:(length(varnames)-1)] <- temp  
   print("   RENAMING COMPLETE.", quote = FALSE)
   print("", quote = FALSE)
 

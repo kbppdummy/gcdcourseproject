@@ -4,6 +4,11 @@
 
 This repository contains all the scripts and data for the course project of the Coursera course _Getting and Cleaning Data_.
 
+## Running the script
+
+The data is already included in this repository. Original data came from [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+Just call the `run_analysis()` function from `run_analysis.R`.
+
 ## Directory Details
 
 1. data folder

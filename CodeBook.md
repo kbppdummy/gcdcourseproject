@@ -9,76 +9,76 @@ This code book is created as a requirement to the course project of the Coursera
 ## Variables
 
 ### First Data Set
-Below is a list of the variables the the script will produce. Those with the form `name.XYZ` has three forms: `name-X`, `name-Y`, and `name-Z`.
+Below is a list of the variables the the script will produce. Those with the form `name.xyz` has three forms: `name.x`, `name.y`, and `name.z`.
  - `subject.id`
  	- the id corresponding to each subject
- - `time.BodyAcc.mean.XYZ`
+ - `mean.of.timebodyacceleration.xyz`
  	- mean of body accelaration for X,Y,Z coordinates (time domain signal)
- - `time.GravityAcc.mean.XYZ`
+ - `mean.of.timegravity.acceleration.xyz`
  	- mean of gravity acceleration for X,Y,Z coordinates (time domain signal)
- - `time.BodyAccJerk.mean.XYZ`
+ - `mean.of.timebodyacceleration.jerk.xyz`
  	- mean of body acceleration jerk for X,Y,Z coordinates (time domain signal)
- - `time.BodyGyro.mean.XYZ`
+ - `mean.of.timebodygyroscope.xyz`
  	- mean of body gyroscope signal for X,Y,Z coordinates (time domain signal)
- - `time.BodyGyroJerk.mean.XYZ`
+ - `mean.of.timebodygyroscope.jerk.xyz`
  	- mean of body gyroscope signal jerk for X,Y,Z coordinates (time domain signal)
- - `time.BodyAccMag.mean`
+ - `mean.of.timebodyacceleration.magnitude`
  	- mean of the magnitude of body acceleration
- - `time.GravityAccMag.mean`
+ - `mean.of.timegravity.acceleration.magnitude`
  	- mean of the magnitude of gravity acceleration
- - `time.BodyAccJerkMag.mean`
+ - `mean.of.timebodyacceleration.jerk.magnitude`
  	- mean of the magnitude of body acceleration jerk
- - `time.BodyGyroMag.mean`
+ - `mean.of.timebodygyroscope.magnitude`
  	- mean of the magnitude of body gyroscope signal
- - `time.BodyGyroJerkMag.mean`
+ - `mean.of.timebodygyroscope.jerk.magnitude`
  	- mean of magnitude of the body gyroscope signal jerk
- - `frequency.BodyAcc.mean.XYZ`
+ - `mean.of.frequencybodyacceleration.xyz`
  	- mean of body acceleration for X,Y,Z coordinates (frequency domain signal)
- - `frequency.BodyAccJerk.mean.XYZ`
+ - `mean.of.frequencybodyacceleration.jerk.xyz`
  	- mean of body acceleration jerk for X,Y,Z coordinates (frequency domain signal)
- - `frequency.BodyGyro.mean.XYZ`
+ - `mean.of.frequencybodygyroscope.xyz`
  	- mean of body gyroscope signal for X,Y,Z coordinates (frequency domain signal)
- - `frequency.BodyAccMag.mean`
+ - `mean.of.frequencybodyacceleration.magnitude`
  	- mean of the magnitude of body acceleration 
- - `frequency.BodyBodyAccJerkMag.mean`
+ - `mean.of.frequencybody.acceleration.jerk.magnitude`
  	- mean of the magnitude of body acceleration jerk
- - `frequency.BodyBodyGyroMag.mean`
+ - `mean.of.frequencybody.gyroscope.magnitude`
  	- mean of the magnitude of body gyroscope signal
- - `frequency.BodyBodyGyroJerkMag.mean`
+ - `mean.of.frequencybody.gyroscope.jerk.magnitude`
  	- mean of the magnitude of the body gyroscope signal jerk
- - `time.BodyAcc.std.XYZ`
+ - `standard.deviation.of.timebodyacceleration.xyz`
  	- standard deviation of body acceleration for X,Y,Z coordinates (time domain signal)
- - `time.GravityAcc.std.XYZ`
+ - `standard.deviation.of.timegravity.acceleration.xyz`
  	- standard deviation of gravity acceleration for X,Y,Z coordinates (time domain signal)
- - `time.BodyAccJerk.std.XYZ`
+ - `standard.deviation.of.timebodyacceleration.jerk.xyz`
  	- standard deviation of body acceleration jerk for X,Y,Z coordinates (time domain signal)
- - `time.BodyGyro.std.XYZ`
+ - `standard.deviation.of.timebodygyroscope.xyz`
  	- standard deviation of body gyroscope signal for X,Y,Z coordinates (time domain signal)
- - `time.BodyGyroJerk.std.XYZ`
+ - `standard.deviation.of.timebodygyroscope.jerk.xyz`
  	- standard deviation of body gyroscope signal jerk for X,Y,Z coordinates (time domain signal)
- - `time.BodyAccMag.std`
+ - `standard.deviation.of.timebodyacceleration.magnitude`
  	- standard deviation of the magnitude of body acceleration
- - `time.GravityAccMag.std`
+ - `standard.deviation.of.timegravity.acceleration.magnitude`
  	- standard deviation of the magnitude of gravity acceleration
- - `time.BodyAccJerkMag.std`
+ - `standard.deviation.of.timebodyacceleration.jerk.magnitude`
  	- standard deviation of the magnitude of body acceleration jerk
- - `time.BodyGyroMag.std`
+ - `standard.deviation.of.timebodygyroscope.magnitude`
  	- standard deviation of the magnitude of body gyroscope signal
- - `time.BodyGyroJerkMag.std`
+ - `standard.deviation.of.timebodygyroscope.jerk.magnitude`
  	- standard deviation of magnitude of the body gyroscope signal jerk
- - `frequency.BodyAcc.std.XYZ`
+ - `standard.deviation.of.frequencybodyacceleration.xyz`
  	- standard deviation of body acceleration for X,Y,Z coordinates (frequency domain signal)
- - `frequency.BodyAccJerk.std.XYZ`
+ - `standard.deviation.of.frequencybodyacceleration.jerk.xyz`
  	- standard deviation of body acceleration jerk for X,Y,Z coordinates (frequency domain signal)
- - `frequency.BodyGyro.std.XYZ`
+ - `standard.deviation.of.frequencybodygyroscope.xyz`
  	- standard deviation of body gyroscope signal for X,Y,Z coordinates (frequency domain signal)
- - `frequency.BodyAccMag.std`
+ - `standard.deviation.of.frequencybodyacceleration.magnitude`
  	- standard deviation of the magnitude of body acceleration
- - `frequency.BodyBodyAccJerkMag.std`
+ - `standard.deviation.of.frequencybody.acceleration.jerk.magnitude`
  	- standard deviation of the magnitude of body acceleration jerk
- - `frequency.BodyBodyGyroMag.std`
+ - `standard.deviation.of.frequencybody.gyroscope.magnitude`
  	- standard deviation of the magnitude of body gyroscope signal
- - `frequency.BodyBodyGyroJerkMag.std`
+ - `standard.deviation.of.frequencybody.gyroscope.jerk.magnitude`
  	- standard deviation of the magnitude of the body gyroscope signal jerk
  - `activity`
     - the type of activity being executed when these measurements are collected
