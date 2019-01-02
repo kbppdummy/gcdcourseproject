@@ -24,9 +24,8 @@ run_analysis <- function(){
     merged <- changeActivityNames(merged)                   #converts the activity labels (i.e., 1-6) into readable form (e.g. 'walking')
   
   #once done, the merged data set will be saved in a file
-  ## it was not specified if it should be printed/returned, so I just wrote it in a .csv file
-  print("Saving the merged and cleaned data into merged.csv ...", quote = FALSE)
-    write.csv(merged, "merged.csv", row.names = FALSE)
+  print("Saving the merged and cleaned data into merged.txt ...", quote = FALSE)
+    write.table(merged, "merged.txt", row.names = FALSE)
   print("DONE.", quote = FALSE)
   print("****************************************", quote = FALSE)
   
@@ -35,9 +34,9 @@ run_analysis <- function(){
     newData <- createSecondDataSet(merged)
   print("DONE.", quote = FALSE)
   
-  #and then also saves it to another .csv file
-  print("Saving second data set into summaries.csv...", quote = FALSE)
-    write.csv(newData, "summaries.csv", row.names = FALSE)
+  #and then also saves it to another .txt file
+  print("Saving second data set into summaries.txt...", quote = FALSE)
+    write.table(newData, "summaries.txt", row.names = FALSE)
   print("DONE.", quote = FALSE)
   print("****************************************", quote = FALSE)
 
