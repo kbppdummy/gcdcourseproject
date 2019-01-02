@@ -99,8 +99,8 @@ The following steps were followed when the data was processed:
 1. Except for the Inertial Signals folder, every file in the `test` and `train` folder were read. The Inertial Signals folder was ignored since we are only interested in the values computed using mean and standard deviation, and the said folder does not contain any of the said values.
 2. Once read, the columns corresponding to mean and standard deviation values were extracted from the original data. This is done by selecting the columns with the keywords `.mean.` and `.std.` as variable name. Variable name preprocessing allowed the periods to be placed before and after the keywords (See `cleanVariableNames` function in `functions.R`).
 3. After extraction, they are merged to create all the observations. Creating a total of 10299 observations. Simple `cbind` and `rbind` functions were used for this.
-4. The output data frame was saved into a `.txt` file named `merged.txt`. (It was not specified whether it should be printed or returned, thus I saved it in a file which can later be read.)
-5. A second independent data set was created. It contains the average of all features as grouped by their corresponding activity and subject. This was done by using the `group_by` function on the first output data, grouping the data by `activity` and `subject.id`. The averages were computed using the `summarize_all` function, applying the mean function to all non-group variables.
+4. The output data frame was saved into a `.txt` file named `merged.txt`.
+5. A second independent data set was created and saved in the `summaries.txt` file. It contains the average of all features as grouped by their corresponding activity and subject. This was done by using the `group_by` function on the first output data, grouping the data by `activity` and `subject.id`. The averages were computed using the `summarize_all` function, applying the mean function to all non-group variables.
 
 ## R Scripts
 
